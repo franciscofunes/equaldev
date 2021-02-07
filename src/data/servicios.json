@@ -1,0 +1,26 @@
+[
+    {
+        "img": "../assets/images/basico.jpg",
+        "alt": "Servicio Básico",
+        "name": "Servicio Básico",
+        "button":"Solicitar"
+    },
+    {
+        "img": "../assets/images/pro.jpg",
+        "alt": "Servicio Pro",
+        "name": "Servicio Pro",
+        "button":"Solicitar"
+    },
+    {
+        "img": "../assets/images/premium.jpg",
+        "alt": "Servicio Premium",
+        "name": "Servicio Premium",
+        "button":"Solicitar"
+    },
+    {
+        "img": "../assets/images/corp.jpg",
+        "alt": "Servicio Corp",
+        "name": "Servicio Corp",
+        "button":"Solicitar"
+    }
+]

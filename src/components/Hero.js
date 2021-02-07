@@ -11,10 +11,10 @@ const Hero = () => {
       </HomeBg>
       <HomeContent>
         <HomeItems>
-          <HomeH1>Diseño Web Premium</HomeH1>
-          <HomeP>Alto impacto</HomeP>
+          <HomeH1>DISEÑO WEB PREMIUM</HomeH1>
+          <HomeP>Calidad y efectividad</HomeP>
           <Button primary="true" big="true" round="true" to="/servicios">
-            Comenzar
+            Planes
           </Button>
         </HomeItems>
       </HomeContent>
@@ -80,7 +80,7 @@ const HomeItems = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   text-align: center;
   height: 100vh;
   max-height: 100%;
@@ -101,4 +101,30 @@ const HomeP = styled.p`
   font-size: clamp(1rem, 3vw, 3rem);
   margin-bottom: 2rem;
   font-weight: 400;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */ 
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width:63%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(204,51,255);
+    }
+  }
 `
