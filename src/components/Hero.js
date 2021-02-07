@@ -11,8 +11,8 @@ const Hero = () => {
       </HomeBg>
       <HomeContent>
         <HomeItems>
-          <HomeH1>Diseño Páginas web</HomeH1>
-          <HomeP>Descripción</HomeP>
+          <HomeH1>Diseño Web Premium</HomeH1>
+          <HomeP>Alto impacto</HomeP>
           <Button primary="true" big="true" round="true" to="/servicios">
             Comenzar
           </Button>
@@ -100,4 +100,5 @@ const HomeH1 = styled.h1`
 const HomeP = styled.p`
   font-size: clamp(1rem, 3vw, 3rem);
   margin-bottom: 2rem;
+  font-weight: 400;
 `
