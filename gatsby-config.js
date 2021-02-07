@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby EqualDev Website`,
+    description: `Diseño y desarrollo de páginas webs, landing pages, ecommerce, Planes de Hosting Profesional para empresas y emprendedores, casillas de correo, alojamiento de páginas web, seguridad, confiabilidad. `,
+    author: `@Equaldev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
