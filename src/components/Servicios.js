@@ -3,9 +3,10 @@ import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Button } from "./Button"
-import { FiBox } from "react-icons/fi";
+import { FiBox } from "react-icons/fi"
+import { FiDollarSign } from "react-icons/fi"
 
-const Servicios = ({heading}) => {
+const Servicios = ({ heading }) => {
   const data = useStaticQuery(graphql`
     query ServiciosQuery {
       allServiciosJson {
@@ -14,6 +15,8 @@ const Servicios = ({heading}) => {
             alt
             button
             name
+            precio
+            caracteristicas
             img {
               childImageSharp {
                 fluid {
@@ -33,16 +36,29 @@ const Servicios = ({heading}) => {
       serviciosArray.push(
         <ProductCard key={index}>
           <ProductImg
-            src={item.node.img.childImageSharp.fluid.src}
             alt={item.node.alt}
             fluid={item.node.img.childImageSharp.fluid}
           />
           <ProductInfo>
             <TextWrap>
-              <FiBox />
-              <ProductTitle>{item.node.name}</ProductTitle>
+              
+              <ProductTitle><FiBox />{item.node.name}</ProductTitle>
+              <ProductPrice><FiDollarSign />{item.node.precio}</ProductPrice>
+              <ProductOptions>{item.node.caracteristicas}</ProductOptions>
             </TextWrap>
-            <Button to="/servicios" primary="true" round="true" css={`position: absolute; top: 420px; font-size:14px;`}> {item.node.button}</Button>
+            <Button
+              to="/servicios"
+              primary="true"
+              round="true"
+              css={`
+                position: absolute;
+                top: 420px;
+                font-size: 14px;
+              `}
+            >
+              {" "}
+              {item.node.button}
+            </Button>
           </ProductInfo>
         </ProductCard>
       )
@@ -52,9 +68,7 @@ const Servicios = ({heading}) => {
 
   return (
     <ProductsContainer>
-      <ProductsHeading>
-        {heading}
-      </ProductsHeading>
+      <ProductsHeading>{heading}</ProductsHeading>
       <ProductsWrapper>{getServicios(data)}</ProductsWrapper>
     </ProductsContainer>
   )
@@ -103,11 +117,11 @@ const ProductImg = styled(Img)`
   max-width: 100%;
   position: absolute;
   border-radius: 10px;
-  filter: brightness(70%);
+  filter: brightness(60%);
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   &:hover {
-    filter: brightness(100%);
+    filter: brightness(90%);
   }
 `
 
@@ -115,7 +129,7 @@ const ProductInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 2rem;
+  padding: 0 1rem;
 
   @media screen and (max-width: 280px) {
     padding: 0.1rem;
@@ -124,13 +138,27 @@ const ProductInfo = styled.div`
 
 const TextWrap = styled.div`
   display: flex;
-  align-items: center;
-  position: absolute;
-  top: 375px;
+  flex-direction: column;
+  align-items: flex-start;
+  /*align-items: center;*/
+  position: absolute;  
+  top: 50px;
 `
 
 const ProductTitle = styled.div`
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-left: 0.5rem;
+`
+const ProductPrice = styled.div`
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+
+`
+const ProductOptions = styled.div`
+  font-weight: 400;
+  font-size: 0.80rem;
+  margin-left: 0.5rem;
+
 `

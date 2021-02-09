@@ -3,24 +3,32 @@
         "img": "../assets/images/basico.jpg",
         "alt": "Servicio Básico",
         "name": "Servicio Básico",
+        "precio": "ARS 3500",
+        "caracteristicas":"4 SECCIONES - PÁGINA WEB ESTÁTICA - ADAPTABLE A DISPOSITIVOS - MAILS LIMITADOS - 25 IMAGENES - ALTA EN GOOGLE - FORMULARIO DE CONTACTO - REDES SOCIALES",
         "button":"Solicitar"
     },
     {
         "img": "../assets/images/pro.jpg",
         "alt": "Servicio Pro",
         "name": "Servicio Pro",
+        "precio": "ARS 5000",
+        "caracteristicas":"PÁGINA WEB DE 8 SECCIONES - OPTIMIZADO GOOGLE ADWORDS - BANNERS ANIMADOS - MAPA INTERACTIVO ADAPTABLE A DISPOSITIVOS - 45 IMAGENES - ALTA EN GOOGLE - FORMULARIO DE CONTACTO - LINK A REDES SOCIALES",
         "button":"Solicitar"
     },
     {
         "img": "../assets/images/premium.jpg",
         "alt": "Servicio Premium",
         "name": "Servicio Premium",
+        "precio": "ARS 9000",
+        "caracteristicas":"TIENDA ONLINE O INSTITUCIONAL - PÁGINA WEB DE 15 SECCIONES - CARRITO DE COMPRAS - COBROS ONLINE - HASTA 20 PRODUCTOS - BANNERS ANIMADOS - VIDEO DE FONDO - MAPA INTERACTIVO - ADAPTABLE A DISPOSITIVOS - 80 IMAGENES - ALTA EN GOOGLE - FORMULARIO DE CONTACTO - LINK A REDES SOCIALES",
         "button":"Solicitar"
     },
     {
         "img": "../assets/images/corp.jpg",
         "alt": "Servicio Corp",
         "name": "Servicio Corp",
+        "precio": "ARS 11000",
+        "caracteristicas":"TIENDA ONLINE O SITIO CORPORATIVO - PÁGINA WEB DE 25 SECCIONES - CHAT ONLINE - DOMINIO.COM - VIDEOS MULTIMEDIA - CARRITO DE COMPRAS - COBROS ONLINE - HASTA 50 PRODUCTOS - BANNERS ANIMADOS - VIDEO DE FONDO - MAPA INTERACTIVO ADAPTABLE A DISPOSITIVOS - MAILS ILIMITADOS - 250 IMAGENES - ALTA EN GOOGLE - FORMULARIO DE CONTACTO - LINK A REDES SOCIALES",
         "button":"Solicitar"
     }
 ]
