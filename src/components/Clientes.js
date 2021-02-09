@@ -36,19 +36,18 @@ const Clientes = () => {
             <Testimonial>
               <IoMdCheckmarkCircleOutline css={`color: rgb(204,51,255); font-size:2rem; margin-bottom:1rem`} />
               <h3>Flavia</h3>
-              <p>
+              <cite>
                 {""}
-                "Un trabajo muy profesional y adecuando a las necesidades de
-                nuestra empresa"
-              </p>
+                "Creativos que supieron captar perfectamente la idea de lo que queríamos hacer. Intuitivos porque con una idea que les trasladamos supieron ampliar y trasladar al trabajo que han desempeñado. <br></br><br></br>
+                Hablan algo y escuchan mucho. Nosotros estamos contentos con Distintiva porque les consideramos unos buenos profesionales"
+              </cite>
             </Testimonial>
             <Testimonial>
               <FaRegLightbulb css={`color: orange; font-size:2rem; margin-bottom:1rem`}/>
               <h3>Rodolfo</h3>
-              <p>
-                "Un trabajo muy profesional y adecuando a las necesidades de
-                nuestra empresa"
-              </p>
+              <cite>
+                "El diseño se ajusta totalmente a lo que buscamos. Una imagen atractiva y limpia en un diseño funcional, cómodo e intuitivo. Todo con una atención personalizada gracias a la cual se han podido entender las necesidades de mi despacho."
+              </cite>
             </Testimonial>
           </ColumnOne>
           <ColumnTwo>
