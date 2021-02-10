@@ -6,6 +6,9 @@ import Hero from "./../components/Hero"
 import Servicios from "./../components/Servicios"
 import Clientes from "./../components/Clientes"
 import Stats from "./../components/Stats"
+import Email from "./../components/Email"
+
+
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +17,7 @@ const IndexPage = () => (
     <Servicios heading="Elegí tu plan"></Servicios>
     <Stats/>
     <Clientes />
+    <Email/>
 
   </Layout>
 )

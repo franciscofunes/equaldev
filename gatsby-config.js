@@ -1,8 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby EqualDev Website`,
+    title: `EqualDev - Diseño de Páginas web`,
     description: `Diseño y desarrollo de páginas webs, landing pages, ecommerce, Planes de Hosting Profesional para empresas y emprendedores, casillas de correo, alojamiento de páginas web, seguridad, confiabilidad. `,
     author: `@Equaldev`,
+    social: [
+      {
+        url: "https://github.com/franciscofunes",
+        name: "GitHub",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -40,6 +46,13 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./src/data/`,
+      },
+    },
+    {
+      resolve: `gatsby-theme-contact`,
+      options: {
+        contactPath: "/contact",
+        successPath: "/thanks",
       },
     },
   ],

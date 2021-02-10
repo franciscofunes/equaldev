@@ -44,7 +44,31 @@ const NavLink = styled(Link)`
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+  transition: all 200ms ease-in;
+  margin: 0 1vw;
+  position: relative;  
   cursor: pointer;
+  :after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: #a85be3;
+    height: 1px;
+    transition: all 0.4s ease-in;
+  }
+
+  :hover {
+    color: #a85be3;
+    ::after {
+      width: 100%;
+    }
+  }
+  
+
 `
 
 const Bars = styled(FaBars)`
@@ -70,6 +94,7 @@ const NavMenu = styled.div`
   @media screen and (max-width: 768px) {
     display: none;
   }
+
 `
 
 const NavBtn = styled.div `
