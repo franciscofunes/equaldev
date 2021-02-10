@@ -51,7 +51,7 @@ const Email = () => {
               name="subject"
               placeholder="Escribí tu mensaje..."
             ></textarea>
-            <input type="submit" value="Pedir presupuesto"></input>
+            <input type="submit" value="Solicitar presupuesto"></input>
           </FormWrap>
         </form>
       </EmailContent>
@@ -114,7 +114,7 @@ const FormWrap = styled.div`
     box-sizing: border-box;
   }
   input[type="submit"] {
-    background-color: #4caf50;
+    background-color: #F26A2E;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -124,7 +124,7 @@ const FormWrap = styled.div`
   }
 
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: rgb(204,51,255);
   }
 
   select {
