@@ -105,7 +105,7 @@ const EmailContent = styled.div`
 
 const FormWrap = styled.div`
   input {
-    width: 80%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     border: 1px solid #ccc;
@@ -113,7 +113,7 @@ const FormWrap = styled.div`
 
   }
   input[type="submit"] {
-    width: 80%;
+    width: 100%;
     background-color: #F26A2E;
     color: white;
     padding: 12px 20px;
@@ -128,7 +128,7 @@ const FormWrap = styled.div`
   }
 
   select {
-    width: 80%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     border: 1px solid #ccc;
@@ -136,7 +136,7 @@ const FormWrap = styled.div`
 
   }
   textarea {
-    width: 80%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     border: 1px solid #ccc;

@@ -111,7 +111,9 @@ const FormWrap = styled.div`
   input[type="text"],
   select,
   textarea {
-    width: 100%;
+    display:grid;
+    width:100%;
+    align-content: center;
     padding: 12px;
     margin: 5px 0px 5px 0px;
     border-radius: 20px;
@@ -119,7 +121,9 @@ const FormWrap = styled.div`
   }
   input[type="submit"] {
     
-    float:left;
+    display:grid;
+    width:100%;
+    align-content: center;
     background-color: #f26a2e;
     color: white;
     padding: 12px 20px;
