@@ -1,9 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import EmailBg from "../assets/images/email.jpg"
-import { Button } from "./Button"
 
-const Email = () => {
+const Form = () => {
   return (
     <EmailContainer>
       <EmailContent>
@@ -23,7 +22,11 @@ const Email = () => {
               required="required"
             />
 
-            <input type="email" placeholder="Tu mail..." id="email" />
+            <input
+              type="text"
+              placeholder="Tu correo electrónico..."
+              id="email"
+            />
 
             <input
               type="text"
@@ -58,8 +61,9 @@ const Email = () => {
     </EmailContainer>
   )
 }
+export default Form
 
-export default Email
+
 
 const EmailContainer = styled.div`
   background: linear-gradient(
@@ -104,58 +108,30 @@ const EmailContent = styled.div`
 `
 
 const FormWrap = styled.div`
-  input {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0px 5px 0px;
     border-radius: 20px;
-
+    resize: none;
   }
   input[type="submit"] {
-    width: 80%;
-    background-color: #F26A2E;
+    
+    float:left;
+    background-color: #f26a2e;
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
-
+    
   }
 
   input[type="submit"]:hover {
-    background-color: rgb(204,51,255);
-  }
-
-  select {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-
-  }
-  textarea {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius:20px;
-    outline: none;
-    resize: none;
-  }
-
-  @media screen and(max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    padding: 0 1rem;
-
-    input,
-    select,
-    textarea {
-      margin-bottom: 1rem;
-      width: 100%;
-      margin-right: 0;
-    }
+    background-color: rgb(204, 51, 255);
   }
 `
+
+
